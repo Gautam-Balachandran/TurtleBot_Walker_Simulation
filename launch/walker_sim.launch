@@ -18,4 +18,4 @@
         args="--all --output-name=$(find turtleBot_walker_sim)/results/turtleBot_walker_sim.bag -x /camera/(.*) --duration=$(arg record_time)" 
         if="$(arg record)"    
     />
-</launch>s
+</launch>
