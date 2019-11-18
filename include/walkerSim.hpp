@@ -31,8 +31,8 @@
  *
  */
 
-#ifndef INCLUDE_TURTLEBOT_WALKER_SIMULATION_WALKERSIM_HPP_
-#define INCLUDE_TURTLEBOT_WALKER_SIMULATION_WALKERSIM_HPP_
+#ifndef INCLUDE_WALKERSIM_HPP_
+#define INCLUDE_WALKERSIM_HPP_
 
 #include <geometry_msgs/Twist.h>
 #include "ros/ros.h"
@@ -91,4 +91,4 @@ class walkerSim {
     void navigateBot();
 };
 
-#endif    // INCLUDE_TURTLEBOT_WALKER_SIMULATION_WALKERSIM_HPP_
+#endif    // INCLUDE_WALKERSIM_HPP_
