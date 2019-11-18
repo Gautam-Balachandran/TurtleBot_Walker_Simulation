@@ -55,6 +55,7 @@ walkerSim::walkerSim() {
     pub.publish(msg);
 }
 
+
 walkerSim::~walkerSim() {
     // stop the turtlebot before exiting
     msg.linear.x = 0.0;
