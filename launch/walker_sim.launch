@@ -1,0 +1,21 @@
+<launch>
+     <arg name="record" default="false"/>
+     <arg name="record_time" default="30"/>
+    <include file="$(find turtlebot_gazebo)/launch/turtlebot_world.launch">
+    </include>
+    <node 
+        pkg="turtleBot_walker_sim" 
+        name="turtleBot_walker_sim"
+        type="turtleBot_walker_sim" 
+        output="screen" 
+        launch-prefix="gnome-terminal --command"
+     />
+    
+    <node
+        pkg="rosbag"
+        name="rosbag_recorder"
+        type="record" 
+        args="--all --output-name=$(find turtleBot_walker_sim)/results/turtleBot_walker_sim.bag -x /camera/(.*) --duration=$(arg record_time)" 
+        if="$(arg record)"    
+    />
+</launch>
