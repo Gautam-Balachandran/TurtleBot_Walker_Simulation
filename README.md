@@ -32,7 +32,7 @@ cd ~/catkin_ws/
 catkin_make
 source ~/catkin_ws/devel/setup.bash
 cd src/
-git clone --recursive https://github.com/gautam-balachandran/beginner_tutorials.git
+git clone --recursive https://github.com/Gautam-Balachandran/turtleBot_walker_simulation.git
 cd ~/catkin_ws/
 catkin_make
 source ./devel/setup.bash
