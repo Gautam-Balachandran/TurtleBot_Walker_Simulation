@@ -1,10 +1,5 @@
 gautam@gautam-Inspiron-7373:~/catkin_ws/src/turtleBot_walker_simulation$ cpplint $( find . -name \*.hpp -or -name \*.cpp | grep -vE -e "^./build/" -e "^./vendor/" -e "^./docs/" -e "^./results" )
-./src/main.cpp:43:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
 Done processing ./src/main.cpp
-./src/walkerSim.cpp:113:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
 Done processing ./src/walkerSim.cpp
-./include/walkerSim.hpp:34:  #ifndef header guard has wrong style, please use: INCLUDE_WALKERSIM_HPP_  [build/header_guard] [5]
-./include/walkerSim.hpp:94:  #endif line should be "#endif  // INCLUDE_WALKERSIM_HPP_"  [build/header_guard] [5]
-./include/walkerSim.hpp:94:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
 Done processing ./include/walkerSim.hpp
-Total errors found: 5
+
